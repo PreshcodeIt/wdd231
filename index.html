@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Precious Ukpebitere">
+    <meta name="description" content="this is a home page demonstrating our courses and little details of our country">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/small.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="script/navigation.js" defer></script>
+    <script src="script/date.js" defer></script>
+    <script src="script/course.js" defer></script>
+</head>
+<body>
+    <header>
+        <img src="images/my-pic (1).webp" alt="profile picture" >
+        <span>Precious Ukpebitere</span>
+        
+    <button id="menu"></button>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" title="Home">Home</a></li>
+            <li><a href="#" title="Chamber" class="active">Chamber</a></li>
+            <li><a href="#" title="GitHub Profile">GitHub Profile</a></li>
+            <li><a href="linkedin.com" title="LinkedIn">LinkedIn</a></li>
+            
+        </ul>
+    </nav>
+
+    </header>
+
+    <main>
+        <h1>Home</h1>
+    <div class="sided-container">
+
+        <section class="course-container" >
+            <h2>Course Work</h2>
+            <ul class="course-list">
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+
+        <section class="country-container" >
+            <h2>Nigeria</h2>
+            <img src="images/Nigeria-small.webp" alt="country-img" class="country-image" >
+            
+        </section>
+        
+    </div>
+
+        <section id="certificate-section">
+            <h2> Web and Computer Programming Certificate</h2>
+            <p id="totalCredits"></p>
+            <div class="filter-buttons">
+                <button id="filter-all">All Courses</button>
+                <button id="filter-wdd">WDD Courses</button>
+                <button id="filter-cse">CSE Courses</button>
+            </div>
+            <div id="courses-container"  class="course-grid"></div>
+            
+        </section>
+
+
+
+    </main>
+
+    <footer>
+        <p>&copy; <span id="currentyear"></span> Precious Ukpebitere - Nigeria</p>
+        <p id="lastModified"></p>
+
+    </footer>
+</body>
+</html>
