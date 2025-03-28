@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chamber of Commerce Directory Page for Sunset Valley" />
+    <meta name="author" content="Precious Ukpebitere" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" />
+    
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Chamber Directory - Sunset Valley">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://yourusername.github.io/wdd231/chamber/images/fav.png">
+    <meta property="og:url" content="https://preshcodeit.github.io/wdd231/chamber/directory.html">
+    
+    <title>Chamber Directory | Sunset Valley</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/large-style.css">
+    <script src="js/script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/fav.png" alt="website logo" width="34" height="40">
+        <h1>Sunset Valley Chamber of Commerce</h1>
+        <button id="myButton"></button>
+        <nav >
+            <ul class="menuLinks">
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="#">Events</a></li>
+                <li><a href="#">Join</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Business Directory</h2>
+        <div class="view-toggle">
+            <button id="grid-btn">Grid View</button>
+            <button id="list-btn">List View</button>
+        </div>
+        <section id="members" class="grid"></section>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Precious Ukpebitere | WDD 231</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,75 @@
+[
+  {
+    "name": "Blue Bottle Coffee",
+    "address": "315 Linden St, San Francisco, CA 94102",
+    "phone": "(510) 653-3394",
+    "url": "https://bluebottlecoffee.com",
+    "image": "blue-bottle.webp",
+    "membership": 3
+  },
+  {
+    "name": "Powell's City of Books",
+    "address": "1005 W Burnside St, Portland, OR 97209",
+    "phone": "(800) 878-7323",
+    "url": "https://www.powells.com",
+    "image": "powell.webp",
+    "membership": 2
+  },
+  {
+    "name": "The Melt",
+    "address": "925 Market St, San Francisco, CA 94103",
+    "phone": "(415) 543-6358",
+    "url": "https://themelt.com",
+    "image": "melt.webp",
+    "membership": 1
+  },
+  {
+    "name": "Sunset Dental",
+    "address": "101 Maple St, Sunset Valley",
+    "phone": "555-3456",
+    "url": "https://sunsetdental.com",
+    "image": "sunset-dental.webp",
+    "membership": 2
+  },
+  {
+    "name": "The Wing Luke Museum",
+    "address": "719 S King St, Seattle, WA 98104",
+    "phone": "(206) 623-5124",
+    "url": "https://www.wingluke.org",
+    "image": "museum.webp",
+    "membership": 2
+  },
+  {
+    "name": "Code Academy",
+    "address": "303 Birch St, Sunset Valley",
+    "phone": "555-4321",
+    "url": "https://codeacademy.com",
+    "image": "codecademy.webp",
+    "membership": 1
+  },
+  {
+    "name": "Valley Tech",
+    "address": "404 Cedar St, Sunset Valley",
+    "phone": "555-6543",
+    "url": "https://valleytech.com",
+    "image": "valley-tech.webp",
+    "membership": 2
+  },
+  {
+    "name": "Local Foods",
+    "address": "1427 W Willow St, Chicago, IL 60642",
+    "phone": "(312) 432-6575",
+    "url": "https://www.localfoods.com",
+    "image": "local-foods.webp",
+    "membership": 2
+  },
+  {
+    "name": "Brooklyn Botanic Garden",
+    "address": "990 Washington Ave, Brooklyn, NY 11225",
+    "phone": "(718) 623-7200",
+    "url": "https://www.bbg.org",
+    "image": "garden.webp",
+    "membership": 3
+  }
+
+]
