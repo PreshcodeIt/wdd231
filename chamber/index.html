@@ -4,7 +4,7 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Chamber of Commerce Directory Page for Sunset Valley" />
+    <meta name="description" content="Chamber of Commerce Home Page for Sunset Valley" />
     <meta name="author" content="Precious Ukpebitere" />
 
     <!-- Favicon -->
@@ -14,12 +14,14 @@
     <meta property="og:title" content="Chamber Directory - Sunset Valley">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://preshcodeit.github.io/wdd231/chamber/images/fav.webp">
-    <meta property="og:url" content="https://preshcodeit.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://preshcodeit.github.io/wdd231/chamber/index.html">
     
-    <title>Sunset Valley Chamber Directory</title>
+    <title>Sunset Valley Chamber </title>
     <link rel="stylesheet" href="styles/styles.css" />
     <link rel="stylesheet" href="styles/large-style.css">
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+    <script src="scripts/spotlight.js" defer></script>
 </head>
 
 <body>
@@ -38,12 +40,36 @@
     </header>
 
     <main>
-        <h2>Business Directory</h2>
-        <div class="view-toggle">
-            <button id="grid-btn">Grid View</button>
-            <button id="list-btn">List View</button>
-        </div>
-        <section id="members" class="grid"></section>
+        <section class="hero">
+            <img src="images/chambers.webp" alt="Community Image">
+            <div class="cta">
+                <a href="#" class="join-btn">Join the Chamber</a>
+            </div>
+        </section>
+        
+        <section class="events">
+            <h2>Upcoming Events</h2>
+            <p>Business Networking Breakfast - April 10th @ 8:00AM</p>
+            <p>Community Cleanup Day - April 15th @ 9:00AM</p>
+        </section>
+        
+        <!-- Weather Section -->
+        <section id="weather">
+            <h2>Current Weather</h2>
+            <div class="weather-today">
+                <img id="weather-icon" alt="">
+                <div>
+                    <p id="description"></p>
+                    <p>Temp: <span id="current-temp"></span></p>
+                </div>
+            </div>
+            <div id="forecast" class="forecast-container"></div>
+        </section>
+        
+        <!-- Spotlight Section -->
+        <section id="spotlights">
+            <h2>Member Spotlights</h2>
+        </section>
     </main>
 
     <footer>
