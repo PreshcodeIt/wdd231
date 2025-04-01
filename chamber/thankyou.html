@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chamber of Commerce thank you for Sunset Valley" />
+    <meta name="author" content="Precious Ukpebitere" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" />
+    
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Chamber thank you- Sunset Valley">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://preshcodeit.github.io/wdd231/chamber/images/fav.webp">
+    <meta property="og:url" content="https://preshcodeit.github.io/wdd231/chamber/thankyou.html">
+    
+    <title>Thank You</title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/large-style.css">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/thankyou.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/fav.webp" alt="website logo" width="34" height="40">
+        <h1>Sunset Valley Chamber Directory</h1>
+        <button id="myButton"></button>
+        <nav >
+            <ul class="menuLinks">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="directory.html">Directory</a></li>
+                <li><a href="join.html">Join</a></li>
+                <li><a href="#">Discover</a></li>
+            </ul>
+        </nav>
+    </header>
+<main class="thanks">
+    <p>Thank you, <span id="firstName"></span> <span id="lastName"></span>, for applying to join the Chamber of
+        Commerce!</p>
+    <p>We have received your application with the following details:</p>
+    <ul>
+        <li><strong>Email:</strong> <span id="email"></span></li>
+        <li><strong>Phone:</strong> <span id="phone"></span></li>
+        <li><strong>Business Name:</strong> <span id="business"></span></li>
+        <li><strong>Submitted On:</strong> <span id="timestamp"></span></li>
+    </ul>
+    <p>We will review your application and get back to you soon.</p>
+    <br>
+    <a href="index.html">Return to Home</a>
+</main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Precious Ukpebitere | WDD 231</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>

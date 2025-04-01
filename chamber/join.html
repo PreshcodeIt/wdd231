@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Chamber of Commerce form Page for Sunset Valley" />
+    <meta name="author" content="Precious Ukpebitere" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico" />
+    
+    <!-- Facebook Meta Tags -->
+    <meta property="og:title" content="Chamber Directory - Sunset Valley">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://preshcodeit.github.io/wdd231/chamber/images/fav.webp">
+    <meta property="og:url" content="https://preshcodeit.github.io/wdd231/chamber/join.html">
+    
+    <title>Join our Chamber </title>
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="styles/large-style.css">
+    <script src="scripts/script.js" defer></script>
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+<header>
+    <img src="images/fav.webp" alt="website logo" width="34" height="40">
+    <h1>Sunset Valley Chamber </h1>
+    <button id="myButton"></button>
+    <nav>
+        <ul class="menuLinks">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="directory.html">Directory</a></li>
+            <li><a href="join.html">Join</a></li>
+            <li><a href="#">Discover</a></li>
+        </ul>
+    </nav>
+</header>
+
+<main>
+    <section>
+        <h2>Membership Application</h2>
+        <form action="thankyou.html" method="get">
+            <label>First Name: <input type="text" name="firstName" required autocomplete="given-name"></label>
+            <label>Last Name: <input type="text" name="lastName" required autocomplete="family-name"></label>
+            <label>Title: <input type="text" name="title" pattern="[A-Za-z\-\s]{7,}"
+                    autocomplete="organization-title"></label>
+            <label>Email: <input type="email" name="email" required placeholder="example@mail.com"></label>
+            <label>Phone: <input type="tel" name="phone" required autocomplete="tel"></label>
+            <label>Business Name: <input type="text" name="business" required autocomplete="organization"></label>
+
+            <label>Membership Level:
+                <select name="membership">
+                    <option value="np">NP (Non-Profit)</option>
+                    <option value="bronze">Bronze</option>
+                    <option value="silver">Silver</option>
+                    <option value="gold">Gold</option>
+                </select>
+            </label>
+
+            <label>Business Description:
+                <textarea name="description" title="Business Description"></textarea>
+            </label>
+
+            <input type="hidden" name="timestamp" id="timestamp">
+            <input type="submit" value="Submit Application">
+        </form>
+    </section>
+
+    <section>
+        <h2>Membership Levels</h2>
+        <div class="membership-cards">
+            <div class="card" onclick="showModal('np-modal')">NP Membership</div>
+            <div class="card" onclick="showModal('bronze-modal')">Bronze Membership</div>
+            <div class="card" onclick="showModal('silver-modal')">Silver Membership</div>
+            <div class="card" onclick="showModal('gold-modal')">Gold Membership</div>
+        </div>
+    </section>
+</main>
+
+<!-- Modals -->
+<div id="np-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="hideModal('np-modal')">&times;</span>
+        <p>NP Membership includes free access to basic networking events and newsletters.</p>
+    </div>
+</div>
+<div id="bronze-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="hideModal('bronze-modal')">&times;</span>
+        <p>Bronze Membership includes NP benefits plus access to exclusive training.</p>
+    </div>
+</div>
+<div id="silver-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="hideModal('silver-modal')">&times;</span>
+        <p>Silver Membership includes Bronze benefits plus event discounts and spotlights.</p>
+    </div>
+</div>
+<div id="gold-modal" class="modal">
+    <div class="modal-content">
+        <span class="close" onclick="hideModal('gold-modal')">&times;</span>
+        <p>Gold Membership includes all benefits plus premium advertising and sponsorships.</p>
+    </div>
+</div>
+
+    <footer>
+        <p>&copy; <span id="year"></span> Precious Ukpebitere | WDD 231</p>
+        <p>Last Modified: <span id="lastModified"></span></p>
+    </footer>
+
+</body>
+
+</html>
