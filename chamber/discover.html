@@ -3,29 +3,32 @@
     
     <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Chamber of Commerce Directory Page for Sunset Valley" />
-    <meta name="author" content="Precious Ukpebitere" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" >
+    <meta name="description" content="Discover Sunset Valley - Attractions and Features" >
+    <meta name="author" content="Precious Ukpebitere" >
 
     <!-- Favicon -->
-    <link rel="icon" href="images/favicon.ico" />
+    <link rel="icon" href="images/favicon.ico" >
     
     <!-- Facebook Meta Tags -->
-    <meta property="og:title" content="Chamber Directory - Sunset Valley">
+    <meta property="og:title" content="Discover - Sunset Valley">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://preshcodeit.github.io/wdd231/chamber/images/fav.webp">
-    <meta property="og:url" content="https://preshcodeit.github.io/wdd231/chamber/directory.html">
+    <meta property="og:url" content="https://preshcodeit.github.io/wdd231/chamber/discover.html">
     
-    <title>Sunset Valley Chamber Directory</title>
-    <link rel="stylesheet" href="styles/styles.css" />
-    <link rel="stylesheet" href="styles/large-style.css">
+    <title>Discover Sunset Valley  </title>
+    <link rel="stylesheet" href="styles/styles.css" >
+    <link rel="stylesheet" href="styles/large-style.css" >
     <script src="scripts/script.js" defer></script>
+    <script src="scripts/visit.js" defer></script>
+    <script src="scripts/discover.js" defer></script>
+
 </head>
 
 <body>
     <header>
         <img src="images/fav.webp" alt="website logo" width="34" height="40">
-        <h1>Sunset Valley Chamber Directory</h1>
+        <h1>Sunset Valley Chamber </h1>
         <button id="myButton"></button>
         <nav >
             <ul class="menuLinks">
@@ -38,12 +41,13 @@
     </header>
 
     <main>
-        <h2>Business Directory</h2>
-        <div class="view-toggle">
-            <button id="grid-btn">Grid View</button>
-            <button id="list-btn">List View</button>
-        </div>
-        <section id="members" class="grid"></section>
+        <h2>Discover Sunset Valley</h2>
+    
+        <!-- User Visit Message -->
+        <div id="visit-message"></div>
+    
+        <!-- Attractions Grid -->
+        <section class="grid-container"></section>
     </main>
 
     <footer>

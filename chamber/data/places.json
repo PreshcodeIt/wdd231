@@ -1,0 +1,54 @@
+{
+  "places": [
+    {
+      "name": "Mountain View Museum",
+      "image": "images/mountain.webp",
+      "address": "456 Heritage Road, Sunset Valley",
+      "description": "Discover the rich history of the valley through interactive exhibits."
+    },
+    {
+
+    "name": "Barton Creek Greenbelt",
+    "address": "3755-B S Capital of Texas Hwy, Austin, TX 78704",
+    "description": "A beautiful park with hiking trails, swimming holes, and rock climbing areas. Great for outdoor lovers!",
+    "image": "images/barton.webp"
+  },
+  {
+    "name": "Sunset Valley Nature Area",
+    "address": "3205 Jones Rd, Sunset Valley, TX 78745",
+    "description": "A peaceful nature preserve with walking trails and wildlife viewing.",
+    "image": "images/sunsetval_1.webp"
+  },
+  {
+    "name": "South Congress Avenue (SoCo)",
+    "address": "South Congress Ave, Austin, TX",
+    "description": "A lively district filled with shops, restaurants, and live music.",
+    "image": "images/southcongress.webp"
+  },
+  {
+    "name": "Zilker Botanical Garden",
+    "address": "2220 Barton Springs Rd, Austin, TX 78746",
+    "description": "Stunning themed gardens featuring native plants, streams, and koi ponds.",
+    "image": "images/zilker.webp"
+  },
+  {
+    "name": "Lady Bird Johnson Wildflower Center",
+    "address": "4801 La Crosse Ave, Austin, TX 78739",
+    "description": "A gorgeous conservation garden featuring native Texas plants and wildlife.",
+    "image": "images/ladybird.webp"
+  },
+  {
+    "name": "The Veloway",
+    "address": "4900 La Crosse Ave, Austin, TX 78739",
+    "description": "A 3-mile paved loop exclusively for bicyclists and rollerbladers.",
+    "image": "images/velcon.webp"
+  },
+  {
+    "name": "Sunset Valley Farmers Market",
+    "address": "3200 Jones Rd, Sunset Valley, TX 78745",
+    "description": "Fresh, local produce and artisan goods every Saturday morning.",
+    "image": "images/farmersmarket.webp"
+  }
+
+  ]
+}
