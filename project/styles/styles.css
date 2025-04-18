@@ -1,0 +1,349 @@
+/* Reset default browser styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #fff;
+    color: #333;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(to right, #ff758c);
+    padding: 1rem 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li {
+    margin-right: 20px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #000;
+}
+
+.hamburger {
+    display: none;
+    font-size: 2rem;
+    cursor: pointer;
+    color: white;
+}
+
+.home-main {
+    background-image: url('../images/wig 4.webp');
+    /* <-- your image path */
+    background-size: cover;
+    /* make the image cover the whole area */
+    background-position: center;
+    /* center the image */
+    background-repeat: no-repeat;
+    /* no repeating */
+    padding: 2rem;
+    /* optional: adds some space inside */
+    
+}
+
+main ul li a {
+    color: #ff758c;
+    /* Pretty pink! Matches hair business vibe */
+    text-decoration: none;
+    /* Remove underline */
+    font-weight: bold;
+    /* Make links pop a little */
+    transition: color 0.3s ease, text-decoration 0.3s ease;
+    /* Smooth hover effect */
+}
+
+main ul li a:hover {
+    color: #c2185b;
+    /* Slightly darker pink on hover */
+    text-decoration: underline;
+    /* Bring back underline on hover */
+}
+
+button{
+    text-align: center;
+    align-items: center;
+    text-decoration: none;
+        font-size: 2rem;
+        padding: 10px 15px;
+        margin: 5px;
+        border: none;
+        background: linear-gradient(to right, #ff758c);
+        color: white;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 5px;
+    
+}
+
+.about{
+    display: block;
+        border-radius: 8px;
+        margin: 1rem;
+        box-shadow: 0 4px 6px 4px rgba(0, 0, 0, 0.1);
+        padding: 1.5rem 3rem;
+        background: #fff;
+        text-align: center;
+        word-spacing: 0.5rem;
+}
+
+.about h2{
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Contact Form */
+.contact form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem;
+}
+
+#gallery img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#gallery img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Modal Styling */
+#modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    padding-top: 100px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.4);
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 2rem;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+    animation: fadeIn 0.3s ease-in-out;
+    text-align: center;
+}
+
+.close-btn {
+    color: #aaa;
+    position: absolute;
+    top: 15px;
+    right: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: black;
+}
+
+#modal img {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+    border-radius: 10px;
+}
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.modal-content {
+    background-color: #fff;
+    margin: auto;
+    padding: 2rem;
+    border: 1px solid #888;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    position: relative;
+    animation: slideIn 0.4s ease-out;
+    text-align: center;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.card {
+    background: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 30px;
+    background: linear-gradient(to right, #ff758c);
+    color: #fff;
+}
+
+footer a{
+    text-decoration: none;
+    color: #ffffff;
+        background-color: rgba(255, 255, 255, 0.3);
+        padding: 0.3rem;
+        border-radius: 8px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+footer a:hover{
+    background-color: rgba(255, 255, 255, 0.5);
+        /* Slightly stronger on hover */
+        color: #333;
+        /* Darker text on hover for better contrast */
+}
+
+/* --- Mobile View --- */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        position: absolute;
+        right: 2rem;
+        top: 80px;
+        background: white;
+        flex-direction: column;
+        width: 200px;
+        border-radius: 8px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-links li a {
+        color: #ff758c;
+        padding: 1rem;
+        display: block;
+    }
+
+    .nav-links.active {
+        display: block;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .home-main {
+        min-height: 50svh;
+        background-size: cover;
+            background-position: center;
+            padding: 2rem 1rem;
+        
+    }
+
+                .hero h1 {
+                    font-size: 2rem;
+                }
+        
+                .hero p {
+                    font-size: 2rem;
+                }
+
+                            
+        .nav-links li {
+            margin: 10px 0;
+        }
+}
+
+/* Main section */
+main {
+    padding: 2rem;
+}
+.hero {
+    background: url('../images/wig/ 4.webp') center/cover no-repeat;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
+}
+

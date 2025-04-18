@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Contact Hair by Pretty Rukky.">
+
+    <!-- facebook meta tags -->
+    <meta property="og:title" content="Hair by Pretty Rukky">
+    <meta property="og:description" content="Shop luxury wigs and hairstyles.">
+    <meta property="og:image" content="https://preshcodeit.github.io/wdd231/project/images/favicon.ico">
+    <meta property="og:url" content="https://preshcodeit.github.io/wdd231/project/contact.html">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="images/favicon.ico">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="styles/styles.css">
+    <title>Contact | Hair by Pretty Rukky</title>
+    <script src="scripts/index.js" defer></script>
+    <script src="scripts/data.js" defer></script>
+    <script src="scripts/gallery.js" defer></script>
+    <script src="scripts/contact.js"></script>
+</head>
+
+<body>
+<header>
+    <div class="logo">Hair by Pretty Rukky</div>
+    <nav>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+        <div class="hamburger" id="hamburger">&#9776;</div>
+    </nav>
+</header>
+
+    <main>
+        <section class="contact">
+
+            <h1>Contact Us</h1>
+            <form id="contactForm" action="thankyou.html" method="get">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Hair by Pretty Rukky. All rights reserved.</p>
+        <a href="attributions.html">Attributions</a>
+    </footer>
+
+    <!-- <script type="module" src="scripts/contact.js"></script> -->
+</body>
+
+</html>

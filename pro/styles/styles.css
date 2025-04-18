@@ -1,0 +1,110 @@
+/* Base Styles */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+.logo {
+    font-size: 1.5em;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+}
+
+.nav-links a.active {
+    border-bottom: 2px solid #fff;
+}
+
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 2em;
+    color: #fff;
+}
+
+/* Hero Section */
+.hero {
+    background: url('../images/hero.jpg') center/cover no-repeat;
+    color: #fff;
+    padding: 100px 20px;
+    text-align: center;
+}
+
+/* Features Section */
+.features {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    padding: 40px 20px;
+    gap: 20px;
+}
+
+.feature {
+    background: #f4f4f4;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+
+/* Contact Form */
+.contact form {
+    max-width: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #333;
+    color: #fff;
+}
+
+/* Responsive Hamburger */
+@media (max-width: 768px) {
+    .nav-links {
+        flex-direction: column;
+        background: #4CAF50;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        display: none;
+    }
+
+    .nav-links.show {
+        display: flex;
+    }
+
+    #menu-toggle {
+        display: block;
+    }
+}
